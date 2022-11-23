@@ -12,7 +12,7 @@ body{
     display: flex;
 }
 
-#add-taskt-container{
+#add-task-container{
     width: 350px;
     padding: 10px;
     background: #fff;
@@ -62,49 +62,88 @@ input{
 /*styling for task which get add to to-do list by todo.js*/
 
 .task{
-    width: 100%;
+    width: 360px;
     background-color: #fff;
     display: flex;
     border-radius: 10px;
     box-shadow: 0 0 3px;
+    padding: 10px;    
+    margin-bottom: 5px;
+    justify-content: space-between;
+    
+
+    /*
     padding: 5px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
+    */
+/*
+    width: 350px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 3px;
+    margin-bottom: 20px;
+    */
 }
 
 .task li {
     list-style: none;
-    flex: 4;
+    /*flex: 4;
     padding:5px;
     font-size: 1.3rem;
     margin: 10px;
-
+  */
 }
 
+/*
 .task button {
+    /*
     flex: 1;
-    border-radius: 2px;
+    
+    border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
+    padding: 0 0 5px;
 }
+
+*/
+
+.task button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+
 
 .task .checkTask {
     color: orange;
-    margin-right: 5px;
-    border: solid 2px orange;
-    font-size: 1.5rem;
+    border: solid 2px transparent;
+    font-size: 1.3rem;
+    margin-left: -10px;
 }
 
 .task .deleteTask {
     color: red;
-    border: solid 2px red;
+    border: solid 2px transparent;
     font-size: 1.3rem;
 }
 
 .task .checkTask:hover{
     background-color: orange;
-    color: #fff;
+    color: green;
 }
 
 .task .deleteTask:hover{

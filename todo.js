@@ -13,17 +13,20 @@ addTask.addEventListener('click', function(){
    let li = document.createElement('li');
    li.innerText = `${inputTask.value}`;
    task.appendChild(li);
-
+  
+   
    //creating check button & appending to task div
    let checkBtn = document.createElement("button");
    checkBtn.innerHTML = '<i class="fa-solid fa-check"><i>';
    checkBtn.classList.add('checkTask');
    task.appendChild(checkBtn);
    
+  
    let deleteBtn = document.createElement("button");
    deleteBtn.innerHTML = '<li class="fa-solid fa-trash-can"><li>';
    deleteBtn.classList.add('deleteTask');
    task.appendChild(deleteBtn);
+   
 
    if(inputTask.value === "") {
     alert('Please Enter a Task');
@@ -32,7 +35,7 @@ addTask.addEventListener('click', function(){
    }
    
      //makes inputTask empty after entering 
-     //inputTask.value = "";
+    inputTask.value = "";
 
      checkBtn.addEventListener('click', function(){
         checkBtn.parentElement.style.textDecoration = "line-through";
